@@ -140,7 +140,7 @@
         return @{@"Photo":@"YES"};
     }else{
         //无权限
-         return @{@"Photo":@"NO"};
+         return @{@"Photo":@"NO"};   
     }
     
       return @{@"Photo":@"NO"};
