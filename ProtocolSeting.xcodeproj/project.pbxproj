@@ -16,6 +16,7 @@
 		4A865F9823CFFEDE00EC4488 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A865F9723CFFEDE00EC4488 /* main.m */; };
 		4A865FA223CFFEDE00EC4488 /* ProtocolSetingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A865FA123CFFEDE00EC4488 /* ProtocolSetingTests.m */; };
 		4A865FAD23CFFEDE00EC4488 /* ProtocolSetingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A865FAC23CFFEDE00EC4488 /* ProtocolSetingUITests.m */; };
+		4A865FBC23D05B3100EC4488 /* PrivateProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A865FBB23D05B3100EC4488 /* PrivateProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		4A865FA823CFFEDE00EC4488 /* ProtocolSetingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolSetingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A865FAC23CFFEDE00EC4488 /* ProtocolSetingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolSetingUITests.m; sourceTree = "<group>"; };
 		4A865FAE23CFFEDE00EC4488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A865FBA23D05B3100EC4488 /* PrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateProtocol.h; sourceTree = "<group>"; };
+		4A865FBB23D05B3100EC4488 /* PrivateProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				4A865F8923CFFED900EC4488 /* SceneDelegate.m */,
 				4A865F8B23CFFED900EC4488 /* ViewController.h */,
 				4A865F8C23CFFED900EC4488 /* ViewController.m */,
+				4A865FBA23D05B3100EC4488 /* PrivateProtocol.h */,
+				4A865FBB23D05B3100EC4488 /* PrivateProtocol.m */,
 				4A865F8E23CFFED900EC4488 /* Main.storyboard */,
 				4A865F9123CFFEDE00EC4488 /* Assets.xcassets */,
 				4A865F9323CFFEDE00EC4488 /* LaunchScreen.storyboard */,
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A865F8D23CFFED900EC4488 /* ViewController.m in Sources */,
+				4A865FBC23D05B3100EC4488 /* PrivateProtocol.m in Sources */,
 				4A865F8723CFFED900EC4488 /* AppDelegate.m in Sources */,
 				4A865F9823CFFEDE00EC4488 /* main.m in Sources */,
 				4A865F8A23CFFED900EC4488 /* SceneDelegate.m in Sources */,
@@ -439,14 +445,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jian YE (27WBAREJ6E)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2Q9S3SL63A;
 				INFOPLIST_FILE = ProtocolSeting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dlk.ProtocolSeting;
+				PRODUCT_BUNDLE_IDENTIFIER = com.epf.iosapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "gdbdx-dlk-dev";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -455,14 +465,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jian YE (27WBAREJ6E)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2Q9S3SL63A;
 				INFOPLIST_FILE = ProtocolSeting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dlk.ProtocolSeting;
+				PRODUCT_BUNDLE_IDENTIFIER = com.epf.iosapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "gdbdx-dlk-dev";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
