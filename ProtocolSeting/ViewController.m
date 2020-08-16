@@ -42,7 +42,7 @@
     return cell;
 }
 -(void) goodFun{
-    NSLog(@"哈哈哈")；ßß
+    NSLog(@"哈哈哈")；
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *model=_dataArry[indexPath.row];
