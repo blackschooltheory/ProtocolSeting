@@ -41,7 +41,9 @@
     
     return cell;
 }
-
+-(void)todoSome{
+    NSLog("todoString");
+}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *model=_dataArry[indexPath.row];
        NSArray *arr= model.allKeys;
