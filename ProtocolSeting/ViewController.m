@@ -43,6 +43,11 @@
 }
 -(void)todoSome{
     NSLog("todoString");
+    NSLog("source tree");
+}
+
+-(void)good{
+    NSLog("hahfha")
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *model=_dataArry[indexPath.row];
